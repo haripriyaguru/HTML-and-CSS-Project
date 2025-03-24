@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamil Books - BookHaven</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="category.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1><a href="index.html">Book<span>Haven</span></a></h1>
+                </div>
+                <div class="search-bar">
+                    <form action="search_results.html" method="get">
+                        <input type="text" name="query" placeholder="Search for books, authors, categories...">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html" class="active">Shop</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="user-actions">
+                    <a href="signin.html" class="btn-secondary"><i class="fas fa-user"></i> Sign In</a>
+                    <a href="cart.html" class="cart-icon"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a>
+                    <a href="notification.html" class="notification-icon"><i class="fas fa-bell"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Category Banner -->
+    <section class="category-banner tamil-banner">
+        <div class="container">
+            <div class="category-banner-content">
+                <h1>Tamil Books</h1>
+                <p>Explore classic and contemporary Tamil literature</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li>Tamil Books</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Shop Content -->
+    <section class="shop-content">
+        <div class="container">
+            <div class="shop-layout">
+                <!-- Sidebar Filters -->
+                <div class="shop-sidebar">
+                    <div class="filter-section">
+                        <h3>Sub Categories</h3>
+                        <ul class="filter-list">
+                            <li>
+                                <input type="checkbox" id="novels" checked>
+                                <label for="novels">Tamil Novels</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="poetry" checked>
+                                <label for="poetry">Tamil Poetry</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="history" checked>
+                                <label for="history">Tamil History</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="biographies" checked>
+                                <label for="biographies">Tamil Biographies</label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="filter-section">
+                        <h3>Price Range</h3>
+                        <div class="price-range">
+                            <input type="range" min="0" max="2000" value="2000" class="price-slider">
+                            <div class="price-inputs">
+                                <div>
+                                    <label for="min-price">Min</label>
+                                    <input type="number" id="min-price" value="0" min="0" max="2000">
+                                </div>
+                                <div>
+                                    <label for="max-price">Max</label>
+                                    <input type="number" id="max-price" value="2000" min="0" max="2000">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="filter-section">
+                        <h3>Authors</h3>
+                        <ul class="filter-list">
+                            <li>
+                                <input type="checkbox" id="kalki" checked>
+                                <label for="kalki">Kalki Krishnamurthy</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="jayakanthan" checked>
+                                <label for="jayakanthan">Jayakanthan</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="sujatha" checked>
+                                <label for="sujatha">Sujatha</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="jeyamohan">
+                                <label for="jeyamohan">Jeyamohan</label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="filter-section">
+                        <h3>Rating</h3>
+                        <ul class="filter-list">
+                            <li>
+                                <input type="checkbox" id="rating-5" checked>
+                                <label for="rating-5">
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="rating-4" checked>
+                                <label for="rating-4">
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="rating-3" checked>
+                                <label for="rating-3">
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <a href="shop.html" class="btn-primary apply-filter">Apply Filters</a>
+                </div>
+
+                <!-- Main Content -->
+                <div class="shop-main">
+                    <div class="shop-header">
+                        <div class="shop-results">
+                            <p>Showing <span>12</span> of <span>48</span> results</p>
+                        </div>
+                        <div class="shop-sort">
+                            <label for="sort-by">Sort by:</label>
+                            <select id="sort-by">
+                                <option value="popularity">Popularity</option>
+                                <option value="price-low">Price: Low to High</option>
+                                <option value="price-high">Price: High to Low</option>
+                                <option value="newest">Newest Arrivals</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="book-grid">
+                        <!-- Book 1 -->
+                        <div class="book-card">
+                            <div class="book-image">
+                                <img src="images/ponniyinselvan.jpeg" alt="Book cover">
+                                <div class="discount-tag">15% OFF</div>
+                            </div>
+                            <div class="book-info">
+                                <h3>Ponniyin Selvan</h3>
+                                <p class="author">Kalki Krishnamurthy</p>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>(4.9)</span>
+                                </div>
+                                <div class="price">
+                                    <span class="current-price">₹599</span>
+                                    <span class="original-price">₹699</span>
+                                </div>
+                                <a href="product.html" class="btn-primary">View Details</a>
+                                <a href="cart.html" class="btn-secondary add-to-cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Book 2 -->
+                        <div class="book-card">
+                            <div class="book-image">
+                                <img src="images/thirukkural.jpg" alt="Book cover">
+                                <div class="discount-tag">25% OFF</div>
+                            </div>
+                            <div class="book-info">
+                                <h3>Thirukkural</h3>
+                                <p class="author">Thiruvalluvar</p>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>(5.0)</span>
+                                </div>
+                                <div class="price">
+                                    <span class="current-price">₹199</span>
+                                    <span class="original-price">₹265</span>
+                                </div>
+                                <a href="product.html" class="btn-primary">View Details</a>
+                                <a href="cart.html" class="btn-secondary add-to-cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Book 3 -->
+                        <div class="book-card">
+                            <div class="book-image">
+                                <img src="images/Silapathikaram.jpg" alt="Book cover">
+                            </div>
+                            <div class="book-info">
+                                <h3>Silapathikaram</h3>
+                                <p class="author">Ilango Adigal</p>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>(4.5)</span>
+                                </div>
+                                <div class="price">
+                                    <span class="current-price">₹349</span>
+                                </div>
+                                <a href="product.html" class="btn-primary">View Details</a>
+                                <a href="cart.html" class="btn-secondary add-to-cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Book 4 -->
+                        <div class="book-card">
+                            <div class="book-image">
+                                <img src="images/Parthiban Kanavu.jpg" alt="Book cover">
+                            </div>
+                            <div class="book-info">
+                                <h3>Parthiban Kanavu</h3>
+                                <p class="author">Kalki Krishnamurthy</p>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>(4.0)</span>
+                                </div>
+                                <div class="price">
+                                    <span class="current-price">₹299</span>
+                                </div>
+                                <a href="product.html" class="btn-primary">View Details</a>
+                                <a href="cart.html" class="btn-secondary add-to-cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Book 5 -->
+                        <div class="book-card">
+                            <div class="book-image">
+                                <img src="images/Vekkai.jpg" alt="Book cover">
+                                <div class="discount-tag">10% OFF</div>
+                            </div>
+                            <div class="book-info">
+                                <h3>Vekkai</h3>
+                                <p class="author">Poomani</p>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>(4.7)</span>
+                                </div>
+                                <div class="price">
+                                    <span class="current-price">₹270</span>
+                                    <span class="original-price">₹300</span>
+                                </div>
+                                <a href="product.html" class="btn-primary">View Details</a>
+                                <a href="cart.html" class="btn-secondary add-to-cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Book 6 -->
+                        <div class="book-card">
+                            <div class="book-image">
+                                <img src="images/Sivagamiyin Sabatham.jpg" alt="Book cover">
+                            </div>
+                            <div class="book-info">
+                                <h3>Sivagamiyin Sabatham</h3>
+                                <p class="author">Kalki Krishnamurthy</p>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>(4.8)</span>
+                                </div>
+                                <div class="price">
+                                    <span class="current-price">₹499</span>
+                                </div>
+                                <a href="product.html" class="btn-primary">View Details</a>
+                                <a href="cart.html" class="btn-secondary add-to-cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="pagination">
+                        <a href="#" class="active">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#" class="next">Next <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="logo">
+                        <h2>Book<span>Haven</span></h2>
+                    </div>
+                    <p>Your one-stop destination for all types of books. We deliver quality books at your doorstep.</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="tamil_books.html">Tamil Books</a></li>
+                        <li><a href="english_books.html">English Books</a></li>
+                        <li><a href="competitive_books.html">Competitive Exam Books</a></li>
+                        <li><a href="fiction_books.html">Fiction Books</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Book Street, Chennai, India</li>
+                        <li><i class="fas fa-phone"></i> +91 9876543210</li>
+                        <li><i class="fas fa-envelope"></i> info@bookhaven.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 BookHaven. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+

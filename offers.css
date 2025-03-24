@@ -1,0 +1,230 @@
+/* Special Offers Pages Styles */
+
+/* Offer Banner */
+.offer-banner {
+    padding: 80px 0;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: var(--light-text);
+}
+
+.offer-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.offer-banner-content {
+    position: relative;
+    z-index: 2;
+}
+
+.offer-badge {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 8px 20px;
+    border-radius: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.offer-banner-content h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.offer-banner-content p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+/* Specific Offer Banners */
+.fiction-offer-banner {
+    background-image: url('https://via.placeholder.com/1200x500');
+    background-color: #5a2b8b;
+}
+
+.academic-offer-banner {
+    background-image: url('https://via.placeholder.com/1200x500');
+    background-color: #2b5a8b;
+}
+
+/* Offer Timer */
+.offer-timer {
+    margin-top: 30px;
+}
+
+.timer-label {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.timer-units {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.timer-unit {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    padding: 15px;
+    min-width: 80px;
+}
+
+.timer-unit .number {
+    display: block;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.timer-unit .label {
+    display: block;
+    font-size: 14px;
+}
+
+.timer-separator {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+/* Offer Details */
+.offer-details {
+    padding: 60px 0;
+    background-color: var(--light-text);
+}
+
+.offer-info {
+    margin-bottom: 50px;
+}
+
+.offer-info h2 {
+    font-size: 28px;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.offer-rules {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.rule-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 25px;
+    background-color: var(--light-bg);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+.rule-icon {
+    width: 60px;
+    height: 60px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: var(--primary-color);
+    flex-shrink: 0;
+}
+
+.rule-content h3 {
+    font-size: 20px;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.rule-content p {
+    margin-bottom: 15px;
+}
+
+.rule-content ul {
+    margin-left: 20px;
+}
+
+.rule-content ul li {
+    margin-bottom: 8px;
+}
+
+/* Offer Tag */
+.offer-tag {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.view-all {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .offer-banner-content h1 {
+        font-size: 36px;
+    }
+    
+    .offer-banner-content p {
+        font-size: 20px;
+    }
+    
+    .timer-unit {
+        min-width: 60px;
+        padding: 10px;
+    }
+    
+    .timer-unit .number {
+        font-size: 24px;
+    }
+    
+    .timer-separator {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 576px) {
+    .offer-banner-content h1 {
+        font-size: 28px;
+    }
+    
+    .offer-banner-content p {
+        font-size: 16px;
+    }
+    
+    .timer-units {
+        flex-wrap: wrap;
+    }
+    
+    .timer-unit {
+        min-width: 70px;
+    }
+    
+    .rule-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}

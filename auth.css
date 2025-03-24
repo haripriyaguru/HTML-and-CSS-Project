@@ -1,0 +1,218 @@
+/* Authentication Pages Styles (Sign In & Sign Up) */
+
+/* Auth Section */
+.auth-section {
+    padding: 60px 0;
+    background-color: var(--light-bg);
+    min-height: calc(100vh - 300px);
+    display: flex;
+    align-items: center;
+  }
+  
+  .auth-container {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: var(--light-text);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+  }
+  
+  .auth-header {
+    padding: 30px;
+    text-align: center;
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  .auth-header h2 {
+    font-size: 28px;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+  }
+  
+  .auth-header p {
+    color: var(--text-color);
+  }
+  
+  .auth-form {
+    padding: 30px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: var(--primary-color);
+  }
+  
+  .input-with-icon {
+    position: relative;
+  }
+  
+  .input-with-icon i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+  }
+  
+  .input-with-icon input {
+    width: 100%;
+    padding: 12px 15px 12px 45px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 16px;
+    outline: none;
+    transition: var(--transition);
+  }
+  
+  .input-with-icon input:focus {
+    border-color: var(--secondary-color);
+  }
+  
+  .form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .remember-me {
+    display: flex;
+    align-items: center;
+  }
+  
+  .remember-me input {
+    margin-right: 8px;
+  }
+  
+  .forgot-password {
+    color: var(--secondary-color);
+    font-weight: 500;
+    transition: var(--transition);
+  }
+  
+  .forgot-password:hover {
+    text-decoration: underline;
+  }
+  
+  .btn-block {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .social-login {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .social-login p {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .social-login p::before,
+  .social-login p::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 30%;
+    height: 1px;
+    background-color: var(--border-color);
+  }
+  
+  .social-login p::before {
+    left: 0;
+  }
+  
+  .social-login p::after {
+    right: 0;
+  }
+  
+  .social-buttons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .social-btn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 4px;
+    color: var(--light-text);
+    transition: var(--transition);
+  }
+  
+  .social-btn i {
+    margin-right: 8px;
+  }
+  
+  .social-btn.google {
+    background-color: #db4437;
+  }
+  
+  .social-btn.facebook {
+    background-color: #4267b2;
+  }
+  
+  .social-btn:hover {
+    opacity: 0.9;
+  }
+  
+  .auth-footer {
+    padding: 20px 30px;
+    text-align: center;
+    border-top: 1px solid var(--border-color);
+  }
+  
+  .auth-footer a {
+    color: var(--secondary-color);
+    font-weight: 500;
+    transition: var(--transition);
+  }
+  
+  .auth-footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 576px) {
+    .auth-container {
+      margin: 0 15px;
+    }
+  
+    .social-buttons {
+      flex-direction: column;
+    }
+  }
+  
+  /* Add notification icon styles */
+  .notification-icon {
+    margin-left: 15px;
+    position: relative;
+    font-size: 18px;
+  }
+  
+  .notification-icon::after {
+    content: "";
+    position: absolute;
+    top: -3px;
+    right: -3px;
+    width: 8px;
+    height: 8px;
+    background-color: red;
+    border-radius: 50%;
+  }
+  
+  

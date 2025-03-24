@@ -1,0 +1,146 @@
+/* Terms & Conditions Page Styles */
+
+/* Terms Banner */
+.terms-banner {
+  background-color: var(--secondary-color);
+  padding: 60px 0;
+  text-align: center;
+}
+
+.terms-banner-content h1 {
+  font-size: 36px;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.terms-banner-content p {
+  font-size: 18px;
+  color: var(--primary-color);
+}
+
+/* Terms Content */
+.terms-content {
+  padding: 60px 0;
+  background-color: var(--light-text);
+}
+
+.terms-wrapper {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 40px;
+}
+
+/* Terms Navigation */
+.terms-navigation {
+  background-color: var(--light-bg);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: var(--shadow);
+  position: sticky;
+  top: 100px;
+  align-self: start;
+  max-height: calc(100vh - 120px);
+  overflow-y: auto;
+}
+
+.terms-navigation h3 {
+  font-size: 20px;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.terms-navigation ul {
+  list-style: none;
+}
+
+.terms-navigation ul li {
+  margin-bottom: 10px;
+}
+
+.terms-navigation ul li a {
+  color: var(--text-color);
+  transition: var(--transition);
+  display: block;
+  padding: 5px 0;
+}
+
+.terms-navigation ul li a:hover {
+  color: var(--secondary-color);
+  padding-left: 5px;
+}
+
+/* Terms Sections */
+.terms-section {
+  margin-bottom: 40px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.terms-section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.terms-section h2 {
+  font-size: 24px;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.terms-section p {
+  margin-bottom: 15px;
+  line-height: 1.8;
+}
+
+.terms-section ul {
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+.terms-section ul li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.contact-details {
+  list-style: none;
+  margin-left: 0 !important;
+}
+
+.contact-details li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.contact-details li i {
+  margin-right: 10px;
+  color: var(--secondary-color);
+  width: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .terms-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .terms-navigation {
+    position: static;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .terms-banner-content h1 {
+    font-size: 28px;
+  }
+
+  .terms-section h2 {
+    font-size: 22px;
+  }
+}
+
